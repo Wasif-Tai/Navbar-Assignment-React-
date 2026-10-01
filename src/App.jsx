@@ -1,4 +1,4 @@
-import { Link, Navigate, Route, Routes } from "react-router";
+import { Link, Route, Routes } from "react-router";
 import Navbar from "./components/navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -23,7 +23,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-
     </div>
   );
 }
