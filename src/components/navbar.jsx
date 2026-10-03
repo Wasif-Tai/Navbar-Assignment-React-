@@ -22,6 +22,18 @@ function Navbar() {
       >
         Contact
       </NavLink>
+      <NavLink
+        to="/login"
+        className={({ isActive }) => `nav-link${isActive ? " is-active" : ""}`}
+      >
+        Login
+      </NavLink>
+      <NavLink
+        to="/register"
+        className={({ isActive }) => `nav-link${isActive ? " is-active" : ""}`}
+      >
+        Sign up
+      </NavLink>
     </nav>
   );
 }

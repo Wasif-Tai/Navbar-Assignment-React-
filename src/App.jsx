@@ -1,11 +1,8 @@
-import { Link, Route, Routes } from "react-router";
+import { Link } from "react-router";
 import Navbar from "./components/navbar";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
 import "./App.css";
 
-function App() {
+function App({ children }) {
   return (
     <div className="site-shell">
       <header className="site-header">
@@ -17,14 +14,11 @@ function App() {
       </header>
 
       <main className="site-main">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        {children}
       </main>
     </div>
   );
+
 }
 
 export default App;
